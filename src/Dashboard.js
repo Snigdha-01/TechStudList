@@ -86,10 +86,7 @@ function Dashboard() {
         {/* Your component's content */}
         <Navbar />
         <Content />
-       
-          <Table />
-        
-
+       <Table />
         <div className="bg-fixed bg-cover bg-center" style={mystyle}>
           <Footer />
         </div>
