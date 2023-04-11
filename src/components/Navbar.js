@@ -1,7 +1,13 @@
 import { useState } from "react";
+import { logout } from "../firebase";
+import { useNavigate } from "react-router-dom";
 export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
+    const navigate =useNavigate()
+    function handleLogout(){
+        logout()
+        navigate("/")
+    }
     return (
       <div className="text-yellow-600 bg-gray-900  ">
         <div className="py-2 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
@@ -75,14 +81,14 @@ export const Navbar = () => {
             </ul>
             <ul className="flex items-center hidden space-x-8 lg:flex">
               <li>
-                <a
-                  href="/"
+                <button
+                  onClick={handleLogout}
                   className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-teal-700 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                   aria-label="Sign up"
                   title="Sign up"
                 >
                   Log Out
-                </a>
+                </button>
               </li>
             </ul>
             <div className="lg:hidden">
