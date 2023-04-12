@@ -35,7 +35,7 @@ export class Table extends Component {
     });
     return (
       <>
-      <div style={{backgroundColor:'white'}}>
+      <div className='bg-gray-200 text-black'>
       <div class="form-group pull-left">
     <input type="text" class="search form-control" style={{width:'100%' , height:'100%'}} placeholder="What you looking for?"/>
 </div>
