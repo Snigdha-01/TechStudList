@@ -81,7 +81,7 @@ export const Footer = () => {
           </div>
           <div>
             <p className="font-semibold tracking-wide">
-              collaboration
+              Collaboration
             </p>
             <ul className="mt-2 space-y-2">
               <li>
@@ -127,7 +127,9 @@ export const Footer = () => {
             </ul>
           </div>
           <div>
-            
+          <p className="font-semibold tracking-wide">
+              Fields
+            </p>
             <ul className="mt-2 space-y-2">
               <li>
                 <a
@@ -172,7 +174,9 @@ export const Footer = () => {
             </ul>
           </div>
           <div>
-            
+          <p className="font-semibold tracking-wide">
+              Technologies
+            </p>
             <ul className="mt-2 space-y-2">
               <li>
                 <a
